@@ -16,7 +16,7 @@ from conflista import Bot
 
 from salvacode import Salvar
 
-from Func import escreve
+from funções import escreve
 
 date = datetime.date.today()
 
