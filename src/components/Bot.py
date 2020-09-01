@@ -16,7 +16,9 @@ from conflista import Bot
 
 from salvacode import Salvar
 
-from funções import escreve
+from escreve import escreve
+
+from geraqrcode import Gerar
 
 date = datetime.date.today()
 
@@ -26,6 +28,8 @@ jan.geometry("800x300")
 jan.configure(background="#2b2b2b")
 jan.resizable(width=False, height=False)
 jan.iconbitmap(default="C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\images\LogoIcon.ico")
+
+logo = PhotoImage(file="C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\images\logo.png")
 
 LeftFrame = Frame(jan, width=220, height=500, bg="#FF8C00", relief="raise")
 LeftFrame.pack(side=LEFT)
@@ -61,14 +65,20 @@ def PegaLista():
         
         Lista = Valores
 
-        Lista = Lista.split(',')
+        # Lista = Lista.replace(',+',',')
+
+        Lista = Lista.split(',+') 
 
         QuantLista = len(Lista)
 
         if QuantCaixas == QuantLista:
 
             try:
+                
                 escreve(Bot, Lista, date, Salvar)
+
+                Gerar(Lista, contador=0)
+
             except:
                 messagebox.showerror("Erro !", "Falha Na Função (escreve) ")
             

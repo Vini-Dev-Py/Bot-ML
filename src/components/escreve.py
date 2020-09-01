@@ -7,6 +7,6 @@ def escreve(Bot, Lista, date, Salvar):
 
     File = open(f'C:\programas\Programaçâo\GitHub\{date} QR-BarCode-Unity.txt', 'w+')
 
-    abrir_arquivo = Salvar(File, date, Lista)
+    abrir_arquivo = Salvar(File, date, lista_certa)
 
-    escrevendo = abrir_arquivo.SalvarTxT(File, Lista, date)
+    escrevendo = abrir_arquivo.SalvarTxT(File, lista_certa, date)

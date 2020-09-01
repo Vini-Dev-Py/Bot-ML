@@ -25,8 +25,7 @@ class Salvar:
 
             try:
                 for i in Lista:
-                    File.write(i)
-                File.close
+                    File.write(f'{i}\n')
             except:
                 messagebox.showerror("Erro !", f"Não Foi Possivel Escrever No Arquivo {date} QR-BarCode-Unity.txt")
 

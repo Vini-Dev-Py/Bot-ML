@@ -1,3 +1,7 @@
+from tkinter import messagebox
+
+from funcconflista import FuncConferir
+
 class Bot:
     def __init__(self, Lista):
         self.Lista = Lista
@@ -10,18 +14,22 @@ class Bot:
 
         ]
 
-        for i in Lista:
-            valor = i.strip()
-            if valor not in l:
-                l.append(valor)
-            else:
-                # logica que avisa quantos valores repetidos
-                pass
+        cont = 0
 
+        ContMenosUm = 0
+
+        def ConferirBarCode(valor):
+
+            quant = len(valor)
+
+            return quant
+
+        FuncConferir(Lista, ContMenosUm, ConferirBarCode, l, cont)
+                
         l.sort()
 
         self.Lista = l
-
+        
         conf = True
         
         return self.Lista
