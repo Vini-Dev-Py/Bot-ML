@@ -80,7 +80,7 @@ def PegaLista():
                 Gerar(Lista, contador=0)
 
             except:
-                messagebox.showerror("Erro !", "Falha Na Função (escreve) ")
+                messagebox.showerror("Erro !", "Falha Na Função (escreve)")
             
         else:
             messagebox.showerror("Erro !", "Seu Total de Caixas Não Bate Com Seus Codigos !")

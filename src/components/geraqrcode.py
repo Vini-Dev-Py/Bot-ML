@@ -41,6 +41,6 @@ def Gerar(Lista, contador):
 
         # code.png(buffer)
 
-    GeraPdf(Lista, L_nomes, contador)
-    
+    GeraPdf(Lista, L_nomes)
+
     print("Hello !")
