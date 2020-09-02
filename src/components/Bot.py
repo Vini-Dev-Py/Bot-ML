@@ -20,8 +20,6 @@ from escreve import escreve
 
 from geraqrcode import Gerar
 
-from suporte import JanSuporte
-
 date = datetime.date.today()
 
 jan = Tk()
@@ -93,8 +91,5 @@ def PegaLista():
  
 ConfButton = ttk.Button(RightFrame, text="Adicionar Lista", width= 30, command=PegaLista)
 ConfButton.place(x=5, y=150)
-
-ConfButton = ttk.Button(RightFrame, text="Suporte", width= 30, command=JanSuporte)
-ConfButton.place(x=5, y=200)
 
 jan.mainloop()
