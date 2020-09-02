@@ -20,6 +20,8 @@ from escreve import escreve
 
 from geraqrcode import Gerar
 
+from suporte import JanSuporte
+
 date = datetime.date.today()
 
 jan = Tk()
@@ -30,6 +32,8 @@ jan.resizable(width=False, height=False)
 jan.iconbitmap(default="C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\images\LogoIcon.ico")
 
 logo = PhotoImage(file="C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\images\logo.png")
+
+messagebox.showinfo("Hello World !", "Seja Bem-Vindo ")
 
 LeftFrame = Frame(jan, width=220, height=500, bg="#FF8C00", relief="raise")
 LeftFrame.pack(side=LEFT)
@@ -89,5 +93,8 @@ def PegaLista():
  
 ConfButton = ttk.Button(RightFrame, text="Adicionar Lista", width= 30, command=PegaLista)
 ConfButton.place(x=5, y=150)
+
+ConfButton = ttk.Button(RightFrame, text="Suporte", width= 30, command=JanSuporte)
+ConfButton.place(x=5, y=200)
 
 jan.mainloop()

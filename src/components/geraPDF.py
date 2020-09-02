@@ -1,5 +1,7 @@
 from fpdf import FPDF
 
+from tkinter import messagebox
+
 import datetime
 
 data_Hoje = datetime.date.today()
