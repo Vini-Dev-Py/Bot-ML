@@ -6,7 +6,7 @@ import datetime
 
 data_Hoje = datetime.date.today()
 
-def GeraPdf(Lista, L_nomes):
+def GeraPdf(Lista, L_nomes, Lote):
 
     pos_nome = 1
 
@@ -51,4 +51,4 @@ def GeraPdf(Lista, L_nomes):
         else:
             cont_pos += 40
 
-    pdf.output(f'code.pdf', 'F')
+    pdf.output(f'Lote{Lote.get()}.pdf', 'F')

@@ -21,7 +21,7 @@ def id_generator(Lista, size=8, chars=string.ascii_uppercase + string.digits):
     print("Hello World")
     print(L_nomes)
 
-def Gerar(Lista, contador):
+def Gerar(Lista, Lote, contador):
     for valor in Lista:
 
         id_generator(Lista)
@@ -41,6 +41,6 @@ def Gerar(Lista, contador):
 
         # code.png(buffer)
 
-    GeraPdf(Lista, L_nomes)
+    GeraPdf(Lista, L_nomes, Lote)
 
     print("Hello !")

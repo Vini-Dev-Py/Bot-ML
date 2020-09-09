@@ -45,12 +45,18 @@ Caixas.place(x=5, y=10)
 CaixasEntry = ttk.Entry(RightFrame, width=53)
 CaixasEntry.place(x=230, y=25)
 
+Lote = Label(RightFrame, text="Nº Do Lote:", font=("Century Gothic", 20), bg="#4f4f4f", fg="Black")
+Lote.place(x=5, y=75)
+
+LoteEntry = ttk.Entry(RightFrame, width=53)
+LoteEntry.place(x=230, y=90)
+
 Valores = Label(RightFrame, text="Codigos Lidos: ", font=("Century Gothic", 20), bg="#4f4f4f", fg="Black")
-Valores.place(x=5, y=75)
+Valores.place(x=5, y=140)
 
 ValoresEntry = Text(RightFrame, width=40, height=5)
 # ValoresEntry.config(state=state)
-ValoresEntry.place(x=230, y=90)
+ValoresEntry.place(x=230, y=155)
 
 # file = open(f'C:\programas\Programaçâo\GitHub\{date} QR-BarCode-Unity.txt', 'w+')
 
@@ -79,7 +85,7 @@ def PegaLista():
                 
                 escreve(Bot, Lista, date, Salvar)
 
-                Gerar(Lista, contador=0)
+                Gerar(Lista, LoteEntry, contador=0)
 
             except:
                 messagebox.showerror("Erro !", "Falha Na Função (escreve)")
@@ -90,6 +96,6 @@ def PegaLista():
         messagebox.showerror("Erro !", "Por Favor Coloque Os Valores Nos Campos !")
  
 ConfButton = ttk.Button(RightFrame, text="Adicionar Lista", width= 30, command=PegaLista)
-ConfButton.place(x=5, y=150)
+ConfButton.place(x=5, y=190)
 
 jan.mainloop()

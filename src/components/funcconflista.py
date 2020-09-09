@@ -34,10 +34,10 @@ def FuncConferir(Lista, ContMenosUm, ConferirBarCode, l, cont):
 
                 else:
 
-                    if QuantDeDig > 122 or QuantDeDig > 40:
+                    if QuantDeDig > 122 or QuantDeDig > 40 or QuantDeDig > 13:
                         #Terminar
                         messagebox.showerror("Erro !", f"Seu Codigo {valor} tem menos de 11 Digitos")
 
-                    elif QuantDeDig < 122 or QuantDeDig < 40:
+                    elif QuantDeDig < 122 or QuantDeDig < 40 or QuantDeDig < 13:
                         #Terminar
                         messagebox.showerror("Erro !", f"Seu Codigo {valor} tem mais de 11 Digitos")
