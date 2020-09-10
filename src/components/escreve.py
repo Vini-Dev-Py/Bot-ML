@@ -5,7 +5,7 @@ def escreve(Bot, Lista, date, Salvar):
 
     print(lista_certa)
 
-    File = open(f'C:\programas\Programaçâo\GitHub\{date} QR-BarCode-Unity.txt', 'w+')
+    File = open(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\mail\{date} QR-BarCode-Unity.txt', 'w+')
 
     abrir_arquivo = Salvar(File, date, lista_certa)
 

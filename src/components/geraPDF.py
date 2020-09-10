@@ -22,7 +22,7 @@ def GeraPdf(Lista, L_nomes, Lote):
     pdf.add_page()
     pdf.set_xy(0, 0)
     pdf.set_font('arial', 'B', 13.0)
-    pdf.cell(ln=0, h=12.0, align='L', w=0, txt=f"{data_Hoje} {Lote}", border=0)
+    pdf.cell(ln=0, h=12.0, align='L', w=0, txt=f"{data_Hoje} Lote: {Lote.get()}", border=0)
 
     for img in Lista:
 
@@ -34,7 +34,7 @@ def GeraPdf(Lista, L_nomes, Lote):
 
         print(nome)
 
-        pdf.image(f'C:\programas\Programaçâo\GitHub\qrcode\{nome}.png', cont_pos, cont_alt, 40)
+        pdf.image(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{nome}.png', cont_pos, cont_alt, 40)
 
         cont += 1
         cont_linhas += 1
@@ -51,4 +51,4 @@ def GeraPdf(Lista, L_nomes, Lote):
         else:
             cont_pos += 40
 
-    pdf.output(f'Lote{Lote.get()}.pdf', 'F')
+    pdf.output(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\Docs\Lote{Lote.get()}.pdf', 'F')

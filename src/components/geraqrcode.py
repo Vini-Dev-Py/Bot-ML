@@ -32,10 +32,10 @@ def Gerar(Lista, Lote, contador):
 
         #for AddNomes in L_nomes:
 
-        with open(f'C:\programas\Programaçâo\GitHub\qrcode\{L_nomes[contador]}.png', 'w'):
-            code.png(f'C:\programas\Programaçâo\GitHub\qrcode\{L_nomes[contador]}.png', scale=10)
+        with open(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{L_nomes[contador]}.png', 'w'):
+            code.png(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{L_nomes[contador]}.png', scale=10)
 
-        code.png(f'C:\programas\Programaçâo\GitHub\qrcode\{L_nomes[contador]}.png', scale=10)
+        code.png(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{L_nomes[contador]}.png', scale=10)
 
         # buffer = io.BytesIO()
 
