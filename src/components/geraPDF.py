@@ -34,7 +34,7 @@ def GeraPdf(Lista, L_nomes, Lote):
 
         print(nome)
 
-        pdf.image(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{nome}.png', cont_pos, cont_alt, 40)
+        pdf.image(f'C:\programas\Programaçâo\GitHub\Bot-ML\Bot-ML\Container\images\{nome}.png', cont_pos, cont_alt, 35)
 
         cont += 1
         cont_linhas += 1
